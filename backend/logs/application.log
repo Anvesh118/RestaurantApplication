@@ -1,0 +1,367 @@
+2025-06-10T14:34:15.787+05:30  INFO 68382 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 22.0.2 with PID 68382 (/Users/shivan/PTT/mini project/backend/target/classes started by shivan in /Users/shivan/PTT/mini project/backend)
+2025-06-10T14:34:15.788+05:30  INFO 68382 --- [backend] [main] c.p.m.backend.BackendApplication         : The following 1 profile is active: "dev"
+2025-06-10T14:34:16.052+05:30  INFO 68382 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-10T14:34:16.076+05:30  INFO 68382 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 4 JPA repository interfaces.
+2025-06-10T14:34:16.382+05:30  INFO 68382 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-10T14:34:16.388+05:30  INFO 68382 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-10T14:34:16.388+05:30  INFO 68382 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-10T14:34:16.408+05:30  INFO 68382 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-10T14:34:16.409+05:30  INFO 68382 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 606 ms
+2025-06-10T14:34:16.487+05:30  INFO 68382 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-10T14:34:16.509+05:30  INFO 68382 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-10T14:34:16.522+05:30  INFO 68382 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-10T14:34:16.627+05:30  INFO 68382 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-10T14:34:16.639+05:30  INFO 68382 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-10T14:34:16.708+05:30  INFO 68382 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@642c72cf
+2025-06-10T14:34:16.709+05:30  INFO 68382 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-10T14:34:16.729+05:30  WARN 68382 --- [backend] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-10T14:34:16.735+05:30  INFO 68382 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.17
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-10T14:34:17.094+05:30  INFO 68382 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-10T14:34:17.232+05:30  INFO 68382 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T14:34:17.453+05:30  INFO 68382 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-10T14:34:17.859+05:30  INFO 68382 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-10T14:34:17.859+05:30  WARN 68382 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-10T14:34:17.877+05:30  WARN 68382 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-10T14:34:18.110+05:30  INFO 68382 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-10T14:34:18.114+05:30  INFO 68382 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 2.574 seconds (process running for 2.821)
+2025-06-10T14:35:26.071+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-10T14:35:26.071+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-10T14:35:26.072+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-10T14:35:26.090+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /api/orders/postNewOrder
+2025-06-10T14:35:26.091+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpc3MiOiJSRVNUQVVSQU5UIiwiaWF0IjoxNzQ5NTQ2MDU3LCJleHAiOjE3NDk1ODIwNTd9.f00MMgFCdpW4WENwxUXAKTRxg-P1PeO1x0IZfpvwN74
+2025-06-10T14:35:26.129+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: admin@gmail.com
+2025-06-10T14:35:26.187+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: admin@gmail.com
+2025-06-10T14:35:26.188+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-10T14:35:26.188+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-10T14:35:26.258+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,Order(id=2, orderItems=[OrderItem(itemName=idli, price=30.0, quantity=1), OrderItem(itemName=idli, price=30.0, quantity=1)], isFinalized=true, isCompleted=false, totalPrice=60.0, user=User(id=1, email=admin@gmail.com, password=$2a$12$SVaDFSLGYp61QA9u/dj8guZfh8gY9vCjTUTp5mp7gqndyizL40o96, username=admin, role=ADMIN), date=null),[]>
+2025-06-10T14:35:26.259+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-10T14:35:29.930+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getItemsAvailableByCategory/DINNER
+2025-06-10T14:35:29.931+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpc3MiOiJSRVNUQVVSQU5UIiwiaWF0IjoxNzQ5NTQ2MDU3LCJleHAiOjE3NDk1ODIwNTd9.f00MMgFCdpW4WENwxUXAKTRxg-P1PeO1x0IZfpvwN74
+2025-06-10T14:35:29.932+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: admin@gmail.com
+2025-06-10T14:35:29.938+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: admin@gmail.com
+2025-06-10T14:35:29.940+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-10T14:35:29.941+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-10T14:35:29.950+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[],[]>
+2025-06-10T14:35:29.950+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-10T14:35:32.730+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getItemsAvailableByCategory/LUNCH
+2025-06-10T14:35:32.731+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpc3MiOiJSRVNUQVVSQU5UIiwiaWF0IjoxNzQ5NTQ2MDU3LCJleHAiOjE3NDk1ODIwNTd9.f00MMgFCdpW4WENwxUXAKTRxg-P1PeO1x0IZfpvwN74
+2025-06-10T14:35:32.732+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: admin@gmail.com
+2025-06-10T14:35:32.738+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: admin@gmail.com
+2025-06-10T14:35:32.740+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-10T14:35:32.740+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-10T14:35:32.746+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[],[]>
+2025-06-10T14:35:32.747+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-6] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-10T14:35:34.922+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getItemsAvailableByCategory/BREAKFAST
+2025-06-10T14:35:34.923+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJpc3MiOiJSRVNUQVVSQU5UIiwiaWF0IjoxNzQ5NTQ2MDU3LCJleHAiOjE3NDk1ODIwNTd9.f00MMgFCdpW4WENwxUXAKTRxg-P1PeO1x0IZfpvwN74
+2025-06-10T14:35:34.924+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: admin@gmail.com
+2025-06-10T14:35:34.931+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: admin@gmail.com
+2025-06-10T14:35:34.933+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-10T14:35:34.934+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-10T14:35:34.939+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[Item(id=1, item=idli, price=30.0, isAvailable=true, category=BREAKFAST)],[]>
+2025-06-10T14:35:34.940+05:30  INFO 68382 --- [backend] [http-nio-8080-exec-8] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-10T14:51:52.503+05:30  WARN 68382 --- [backend] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m35s675ms).
+2025-06-10T14:56:59.190+05:30  INFO 68382 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-10T14:56:59.194+05:30  INFO 68382 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-10T14:56:59.196+05:30  INFO 68382 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-10T14:56:59.199+05:30  INFO 68382 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-10T14:56:59.200+05:30  INFO 68382 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T15:22:20.822+05:30  INFO 16496 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 21.0.7 with PID 16496 (D:\PROJECT\ppt\Restaurant-application\backend\target\classes started by ANVESH in D:\PROJECT\ppt\Restaurant-application\backend)
+2025-06-11T15:22:20.825+05:30  INFO 16496 --- [backend] [main] c.p.m.backend.BackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T15:22:22.834+05:30  INFO 16496 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T15:22:22.980+05:30  INFO 16496 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 4 JPA repository interfaces.
+2025-06-11T15:22:24.564+05:30  INFO 16496 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T15:22:24.596+05:30  INFO 16496 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T15:22:24.596+05:30  INFO 16496 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-11T15:22:24.726+05:30  INFO 16496 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T15:22:24.727+05:30  INFO 16496 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3805 ms
+2025-06-11T15:22:25.121+05:30  INFO 16496 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T15:22:25.253+05:30  INFO 16496 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-11T15:22:25.330+05:30  INFO 16496 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T15:22:25.937+05:30  INFO 16496 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T15:22:25.999+05:30  INFO 16496 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T15:22:26.624+05:30  INFO 16496 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@636fccb0
+2025-06-11T15:22:26.627+05:30  INFO 16496 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T15:22:26.794+05:30  INFO 16496 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T15:22:28.433+05:30  INFO 16496 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T15:22:28.577+05:30  INFO 16496 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:22:29.693+05:30  INFO 16496 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T15:22:31.253+05:30  INFO 16496 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T15:22:31.254+05:30  WARN 16496 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T15:22:31.367+05:30  WARN 16496 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T15:22:32.591+05:30  INFO 16496 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T15:22:32.605+05:30  INFO 16496 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 12.732 seconds (process running for 14.76)
+2025-06-11T15:22:56.554+05:30  INFO 16496 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T15:22:56.555+05:30  INFO 16496 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T15:22:56.558+05:30  INFO 16496 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T15:25:30.297+05:30  INFO 16496 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T15:25:30.308+05:30  INFO 16496 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T15:25:30.316+05:30  INFO 16496 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:25:30.320+05:30  INFO 16496 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T15:25:30.338+05:30  INFO 16496 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T15:25:33.313+05:30  INFO 27336 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 21.0.7 with PID 27336 (D:\PROJECT\ppt\Restaurant-application\backend\target\classes started by ANVESH in D:\PROJECT\ppt\Restaurant-application\backend)
+2025-06-11T15:25:33.316+05:30  INFO 27336 --- [backend] [main] c.p.m.backend.BackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T15:25:34.622+05:30  INFO 27336 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T15:25:34.776+05:30  INFO 27336 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 4 JPA repository interfaces.
+2025-06-11T15:25:36.473+05:30  INFO 27336 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T15:25:36.502+05:30  INFO 27336 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T15:25:36.502+05:30  INFO 27336 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-11T15:25:36.621+05:30  INFO 27336 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T15:25:36.622+05:30  INFO 27336 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3221 ms
+2025-06-11T15:25:36.990+05:30  INFO 27336 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T15:25:37.097+05:30  INFO 27336 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-11T15:25:37.163+05:30  INFO 27336 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T15:25:37.706+05:30  INFO 27336 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T15:25:37.776+05:30  INFO 27336 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T15:25:38.443+05:30  INFO 27336 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b2b7e3c
+2025-06-11T15:25:38.446+05:30  INFO 27336 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T15:25:38.586+05:30  INFO 27336 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T15:25:40.319+05:30  INFO 27336 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T15:25:40.443+05:30  INFO 27336 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:25:41.651+05:30  INFO 27336 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T15:25:43.430+05:30  INFO 27336 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T15:25:43.431+05:30  WARN 27336 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T15:25:43.537+05:30  WARN 27336 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T15:25:44.732+05:30  INFO 27336 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T15:25:44.748+05:30  INFO 27336 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 12.35 seconds (process running for 13.075)
+2025-06-11T15:25:56.492+05:30  INFO 27336 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T15:25:56.493+05:30  INFO 27336 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T15:25:56.495+05:30  INFO 27336 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T15:26:46.882+05:30  INFO 27336 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T15:26:46.893+05:30  INFO 27336 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T15:26:46.903+05:30  INFO 27336 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:26:46.908+05:30  INFO 27336 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T15:26:46.928+05:30  INFO 27336 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T15:26:49.889+05:30  INFO 31972 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 21.0.7 with PID 31972 (D:\PROJECT\ppt\Restaurant-application\backend\target\classes started by ANVESH in D:\PROJECT\ppt\Restaurant-application\backend)
+2025-06-11T15:26:49.894+05:30  INFO 31972 --- [backend] [main] c.p.m.backend.BackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T15:26:51.213+05:30  INFO 31972 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T15:26:51.348+05:30  INFO 31972 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119 ms. Found 4 JPA repository interfaces.
+2025-06-11T15:26:52.725+05:30  INFO 31972 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T15:26:52.752+05:30  INFO 31972 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T15:26:52.753+05:30  INFO 31972 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-11T15:26:52.864+05:30  INFO 31972 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T15:26:52.865+05:30  INFO 31972 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2881 ms
+2025-06-11T15:26:53.271+05:30  INFO 31972 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T15:26:53.368+05:30  INFO 31972 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-11T15:26:53.435+05:30  INFO 31972 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T15:26:53.971+05:30  INFO 31972 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T15:26:54.031+05:30  INFO 31972 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T15:26:54.704+05:30  INFO 31972 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cf2f5d6
+2025-06-11T15:26:54.709+05:30  INFO 31972 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T15:26:54.850+05:30  INFO 31972 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T15:26:56.480+05:30  INFO 31972 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T15:26:56.616+05:30  INFO 31972 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:26:57.698+05:30  INFO 31972 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T15:26:59.088+05:30  INFO 31972 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T15:26:59.089+05:30  WARN 31972 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T15:26:59.214+05:30  WARN 31972 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T15:27:00.324+05:30  INFO 31972 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T15:27:00.339+05:30  INFO 31972 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 11.389 seconds (process running for 12.189)
+2025-06-11T15:27:04.300+05:30  INFO 31972 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T15:27:04.314+05:30  INFO 31972 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T15:27:04.324+05:30  INFO 31972 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:27:04.327+05:30  INFO 31972 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T15:27:04.344+05:30  INFO 31972 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T15:27:07.503+05:30  INFO 5508 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 21.0.7 with PID 5508 (D:\PROJECT\ppt\Restaurant-application\backend\target\classes started by ANVESH in D:\PROJECT\ppt\Restaurant-application\backend)
+2025-06-11T15:27:07.507+05:30  INFO 5508 --- [backend] [main] c.p.m.backend.BackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T15:27:08.780+05:30  INFO 5508 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T15:27:08.923+05:30  INFO 5508 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 4 JPA repository interfaces.
+2025-06-11T15:27:10.349+05:30  INFO 5508 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T15:27:10.377+05:30  INFO 5508 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T15:27:10.377+05:30  INFO 5508 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-11T15:27:10.498+05:30  INFO 5508 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T15:27:10.499+05:30  INFO 5508 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2903 ms
+2025-06-11T15:27:10.886+05:30  INFO 5508 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T15:27:10.979+05:30  INFO 5508 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-11T15:27:11.049+05:30  INFO 5508 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T15:27:11.549+05:30  INFO 5508 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T15:27:11.599+05:30  INFO 5508 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T15:27:12.255+05:30  INFO 5508 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60a4e619
+2025-06-11T15:27:12.260+05:30  INFO 5508 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T15:27:12.409+05:30  INFO 5508 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T15:27:13.961+05:30  INFO 5508 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T15:27:14.377+05:30  INFO 5508 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:27:15.354+05:30  INFO 5508 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T15:27:16.824+05:30  INFO 5508 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T15:27:16.825+05:30  WARN 5508 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T15:27:16.922+05:30  WARN 5508 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T15:27:18.025+05:30  INFO 5508 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T15:27:18.039+05:30  INFO 5508 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 11.463 seconds (process running for 12.176)
+2025-06-11T15:27:23.686+05:30  INFO 5508 --- [backend] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T15:27:23.697+05:30  INFO 5508 --- [backend] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T15:27:23.703+05:30  INFO 5508 --- [backend] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:27:23.829+05:30  INFO 5508 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T15:27:23.845+05:30  INFO 5508 --- [backend] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T15:27:26.929+05:30  INFO 30756 --- [backend] [main] c.p.m.backend.BackendApplication         : Starting BackendApplication using Java 21.0.7 with PID 30756 (D:\PROJECT\ppt\Restaurant-application\backend\target\classes started by ANVESH in D:\PROJECT\ppt\Restaurant-application\backend)
+2025-06-11T15:27:26.933+05:30  INFO 30756 --- [backend] [main] c.p.m.backend.BackendApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T15:27:28.239+05:30  INFO 30756 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T15:27:28.387+05:30  INFO 30756 --- [backend] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 4 JPA repository interfaces.
+2025-06-11T15:27:29.849+05:30  INFO 30756 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-06-11T15:27:29.887+05:30  INFO 30756 --- [backend] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T15:27:29.887+05:30  INFO 30756 --- [backend] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-11T15:27:30.008+05:30  INFO 30756 --- [backend] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T15:27:30.008+05:30  INFO 30756 --- [backend] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2993 ms
+2025-06-11T15:27:30.413+05:30  INFO 30756 --- [backend] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T15:27:30.506+05:30  INFO 30756 --- [backend] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-11T15:27:30.570+05:30  INFO 30756 --- [backend] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T15:27:31.093+05:30  INFO 30756 --- [backend] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T15:27:31.147+05:30  INFO 30756 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-11T15:27:31.801+05:30  INFO 30756 --- [backend] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@15914bb5
+2025-06-11T15:27:31.804+05:30  INFO 30756 --- [backend] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-11T15:27:31.953+05:30  INFO 30756 --- [backend] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T15:27:33.489+05:30  INFO 30756 --- [backend] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T15:27:34.698+05:30  INFO 30756 --- [backend] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T15:27:35.680+05:30  INFO 30756 --- [backend] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-11T15:27:37.169+05:30  INFO 30756 --- [backend] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2025-06-11T15:27:37.170+05:30  WARN 30756 --- [backend] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-06-11T15:27:37.272+05:30  WARN 30756 --- [backend] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T15:27:38.410+05:30  INFO 30756 --- [backend] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-06-11T15:27:38.424+05:30  INFO 30756 --- [backend] [main] c.p.m.backend.BackendApplication         : Started BackendApplication in 12.382 seconds (process running for 13.099)
+2025-06-11T15:28:03.899+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T15:28:03.900+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T15:28:03.902+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-06-11T15:28:03.995+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /signup
+2025-06-11T15:28:03.995+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:28:03.996+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:28:05.110+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <201 CREATED Created,Signup successful,[]>
+2025-06-11T15:28:05.112+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:07.276+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /login
+2025-06-11T15:28:07.277+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:28:07.277+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:28:08.613+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,{role=ADMIN, accessToken=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s},[]>
+2025-06-11T15:28:08.615+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:25.602+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getAllItemsByCategory/BREAKFAST
+2025-06-11T15:28:25.603+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:25.690+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:25.768+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:25.773+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:25.774+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:25.795+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[],[]>
+2025-06-11T15:28:25.796+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-7] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:25.808+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getAllItemsByCategory/BREAKFAST
+2025-06-11T15:28:25.809+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:25.810+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:25.818+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:25.820+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:25.821+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:25.829+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[],[]>
+2025-06-11T15:28:25.830+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:34.330+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /api/items/postItem
+2025-06-11T15:28:34.331+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:34.333+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:34.341+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:34.344+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:34.345+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:34.369+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.backend.services.ItemsService      : Creating new Item
+2025-06-11T15:28:34.393+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,Item(id=1, item=IDLY, price=50.0, isAvailable=true, category=BREAKFAST),[]>
+2025-06-11T15:28:34.394+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:34.432+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getAllItemsByCategory/BREAKFAST
+2025-06-11T15:28:34.434+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:34.436+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:34.444+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:34.447+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:34.448+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:34.456+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[Item(id=1, item=IDLY, price=50.0, isAvailable=true, category=BREAKFAST)],[]>
+2025-06-11T15:28:34.458+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-2] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:46.470+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /api/items/postItem
+2025-06-11T15:28:46.471+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:46.473+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:46.479+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:46.484+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:46.485+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:46.488+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.services.ItemsService      : Creating new Item
+2025-06-11T15:28:46.507+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,Item(id=2, item=PURI, price=50.0, isAvailable=true, category=BREAKFAST),[]>
+2025-06-11T15:28:46.507+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-4] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:28:46.517+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getAllItemsByCategory/BREAKFAST
+2025-06-11T15:28:46.517+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQURNSU4iLCJzdWIiOiJBZG1pbjg4QGdtYWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU4ODgsImV4cCI6MTc0OTY3MTg4OH0.zl_8gGPxmPonWoQqwxYIazfFXazhANVUjReEt4csO0s
+2025-06-11T15:28:46.520+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: Admin88@gmail.com
+2025-06-11T15:28:46.526+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: Admin88@gmail.com
+2025-06-11T15:28:46.529+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:28:46.529+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:28:46.538+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[Item(id=1, item=IDLY, price=50.0, isAvailable=true, category=BREAKFAST), Item(id=2, item=PURI, price=50.0, isAvailable=true, category=BREAKFAST)],[]>
+2025-06-11T15:28:46.539+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-5] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:29:18.742+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /signup
+2025-06-11T15:29:18.743+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:29:18.743+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:29:19.357+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <201 CREATED Created,Signup successful,[]>
+2025-06-11T15:29:19.358+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:29:21.136+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /login
+2025-06-11T15:29:21.136+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:29:21.136+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:29:21.715+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,{role=KITCHEN, accessToken=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiS0lUQ0hFTiIsInN1YiI6IktpdGNoZW5AZ2FtaWwuY29tIiwiaXNzIjoiUkVTVEFVUkFOVCIsImlhdCI6MTc0OTYzNTk2MSwiZXhwIjoxNzQ5NjcxOTYxfQ.n-CM-In2xECDgYA1A7S_J9yoxlRSfWjXT91tkvFXETs},[]>
+2025-06-11T15:29:21.715+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-10] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:29:54.025+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-3] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /signup
+2025-06-11T15:29:54.026+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-3] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:29:54.026+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-3] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:29:54.627+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-3] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <201 CREATED Created,Signup successful,[]>
+2025-06-11T15:29:54.627+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-3] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:29:58.290+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /login
+2025-06-11T15:29:58.290+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: null
+2025-06-11T15:29:58.291+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-6] c.p.m.b.configs.JwtAuthenticationFilter  : Invalid authorization header format
+2025-06-11T15:29:58.881+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-6] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,{role=CUSTOMER, accessToken=eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJVc2VyQGdhbWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU5OTgsImV4cCI6MTc0OTY3MTk5OH0.xAp2JAURgsrOIA4y2z8di15oG1uVjED-2KR_sDBOWzA},[]>
+2025-06-11T15:29:58.881+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-6] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:30:07.144+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getItemsAvailableByCategory/BREAKFAST
+2025-06-11T15:30:07.144+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJVc2VyQGdhbWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU5OTgsImV4cCI6MTc0OTY3MTk5OH0.xAp2JAURgsrOIA4y2z8di15oG1uVjED-2KR_sDBOWzA
+2025-06-11T15:30:07.148+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: User@gamil.com
+2025-06-11T15:30:07.158+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: User@gamil.com
+2025-06-11T15:30:07.161+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:30:07.161+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:30:07.176+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[Item(id=1, item=IDLY, price=50.0, isAvailable=true, category=BREAKFAST), Item(id=2, item=PURI, price=50.0, isAvailable=true, category=BREAKFAST)],[]>
+2025-06-11T15:30:07.177+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-9] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:30:07.184+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: GET /api/items/getItemsAvailableByCategory/BREAKFAST
+2025-06-11T15:30:07.185+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJVc2VyQGdhbWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU5OTgsImV4cCI6MTc0OTY3MTk5OH0.xAp2JAURgsrOIA4y2z8di15oG1uVjED-2KR_sDBOWzA
+2025-06-11T15:30:07.188+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: User@gamil.com
+2025-06-11T15:30:07.195+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: User@gamil.com
+2025-06-11T15:30:07.199+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:30:07.200+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:30:07.207+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,[Item(id=1, item=IDLY, price=50.0, isAvailable=true, category=BREAKFAST), Item(id=2, item=PURI, price=50.0, isAvailable=true, category=BREAKFAST)],[]>
+2025-06-11T15:30:07.209+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-8] c.p.m.backend.aspects.LoggingAspect      : 
+2025-06-11T15:30:13.111+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : JWT Filter processing request: POST /api/orders/postNewOrder
+2025-06-11T15:30:13.112+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : Authorization header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQ1VTVE9NRVIiLCJzdWIiOiJVc2VyQGdhbWlsLmNvbSIsImlzcyI6IlJFU1RBVVJBTlQiLCJpYXQiOjE3NDk2MzU5OTgsImV4cCI6MTc0OTY3MTk5OH0.xAp2JAURgsrOIA4y2z8di15oG1uVjED-2KR_sDBOWzA
+2025-06-11T15:30:13.115+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : Extracted username: User@gamil.com
+2025-06-11T15:30:13.122+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : Loaded user details for: User@gamil.com
+2025-06-11T15:30:13.124+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : Token valid: true
+2025-06-11T15:30:13.124+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.b.configs.JwtAuthenticationFilter  : Authentication set in SecurityContext
+2025-06-11T15:30:13.202+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.backend.aspects.LoggingAspect      : Returned obj, <200 OK OK,Order(id=1, orderItems=[OrderItem(itemName=PURI, price=50.0, quantity=1), OrderItem(itemName=IDLY, price=50.0, quantity=1)], isFinalized=true, isCompleted=false, totalPrice=100.0, user=User(id=3, email=User@gamil.com, password=$2a$12$a9.i/b.y/Dcf09sID8iy0OmHLLSKIf7YUvTwlBbI/pv1sUuvC0.MS, username=null, role=CUSTOMER), date=null),[]>
+2025-06-11T15:30:13.203+05:30  INFO 30756 --- [backend] [http-nio-8080-exec-1] c.p.m.backend.aspects.LoggingAspect      : 

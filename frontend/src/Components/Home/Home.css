@@ -1,0 +1,45 @@
+.home-container {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.home-content h2 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 1.5rem;
+}
+
+.home-content ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.home-content li {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.home-content li strong {
+    color: #333;
+}
